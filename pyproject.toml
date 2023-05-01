@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "s3zip"
+version = "0.1.0"
+description = "A command-line utility that downloads the contents of an S3 bucket and archives it to a ZIP file"
+authors = ["Ryan Draga <ryan.draga@boxingoctop.us>"]
+license = "MPL-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+boto3 = "^1.17.112"
+click = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry>=1.1.0"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.publishing]
+repository = "pypi"
+
+[tool.poetry.scripts]
+s3zip = "s3zip.cli:main"
