@@ -1,5 +1,3 @@
-Sure, here's a README.md file for the `s3zip` utility:
-
 # s3zip
 
 `s3zip` is a command-line utility that downloads the contents of an S3 bucket and archives it to a ZIP file. It uses the `boto3` library to interact with the S3 service and the `click` library to provide a user-friendly command-line interface.
